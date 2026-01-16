@@ -1,0 +1,16 @@
+Data Cleaning: 
+During training, corrupted images were detected in the dataset. These were programmatically identified and removed using the PIL image verification method to ensure data integrity before model training.
+(vicenv) PS D:\Github\pet-image-classification> python utils/clean_images.py
+❌ Removing corrupted file: data\raw\cats\666.jpg
+❌ Removing corrupted file: data\raw\cats\Thumbs.db
+❌ Removing corrupted file: data\raw\dogs\11702.jpg
+C:\Users\Z.Shahid\miniconda3\envs\vicenv\lib\site-packages\PIL\TiffImagePlugin.py:864: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+❌ Removing corrupted file: data\raw\dogs\Thumbs.db
+❌ Removing corrupted file: data\test\cats\Thumbs.db
+❌ Removing corrupted file: data\train\cats\666.jpg
+❌ Removing corrupted file: data\train\dogs\11702.jpg
+❌ Removing corrupted file: data\train\dogs\Thumbs.db
+✅ Cleaning completed. Removed 8 corrupted files.
+
+
