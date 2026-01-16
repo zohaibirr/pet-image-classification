@@ -1,4 +1,6 @@
+-----------------
 Data Cleaning: 
+-----------------
 During training, corrupted images were detected in the dataset. These were programmatically identified and removed using the PIL image verification method to ensure data integrity before model training.
 (vicenv) PS D:\Github\pet-image-classification> python utils/clean_images.py
 ❌ Removing corrupted file: data\raw\cats\666.jpg
@@ -13,4 +15,7 @@ C:\Users\Z.Shahid\miniconda3\envs\vicenv\lib\site-packages\PIL\TiffImagePlugin.p
 ❌ Removing corrupted file: data\train\dogs\Thumbs.db
 ✅ Cleaning completed. Removed 8 corrupted files.
 
+------------------------------------
+This project uses a fully custom CNN architecture without any pretrained models to ensure a clear understanding of convolutional neural networks and fair academic evaluation
+------------------------------------
 
