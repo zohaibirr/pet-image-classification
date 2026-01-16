@@ -1,3 +1,4 @@
+from tensorflow.keras.metrics import AUC
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import (
     Conv2D, MaxPooling2D,
@@ -28,7 +29,7 @@ def build_model(input_shape=(128,128,3)):
     model.compile(
         optimizer="adam",
         loss="binary_crossentropy",
-        metrics=["accuracy"]
+        metrics=["accuracy", AUC(name="auc")]
     )
 
     return model
